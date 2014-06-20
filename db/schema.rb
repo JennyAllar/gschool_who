@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140619202001) do
+ActiveRecord::Schema.define(version: 20140620154155) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "gschoolers", force: true do |t|
+  create_table "players", force: true do |t|
     t.string  "name"
+    t.string  "url"
     t.string  "shirt_color_1"
     t.string  "shirt_color_2"
     t.string  "shirt_color_3"
@@ -27,6 +28,8 @@ ActiveRecord::Schema.define(version: 20140619202001) do
     t.boolean "necklace"
     t.boolean "earrings"
     t.boolean "glasses"
+    t.boolean "collar"
+    t.boolean "male"
   end
 
 end
