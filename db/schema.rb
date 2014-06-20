@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140620154155) do
     t.boolean "glasses"
     t.boolean "collar"
     t.boolean "male"
+    t.string  "url_1",         limit: nil
   end
 
 end
