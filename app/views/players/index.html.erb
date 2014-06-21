@@ -2,7 +2,7 @@
     <% @players.each do |player| %>
     <figure>
     <img src="<%= player.url %>">
-      <figcaption><%= player.name %></figcaption>
+      <figcaption><h3><%= player.name %></h3></figcaption>
       <a class="button" href="<%= player.id %>">Pick <%= player.name %></a>
       </figure>
     <% end %>
